@@ -26,7 +26,7 @@
                     <div class="flex flex-row gap-8">
                         <div class="flex flex-row gap-1 items-center bg-slate-100 px-2 rounded-3xl w-20 justify-center">
                             <i class="fa-solid fa-square-check text-xl text-blue-700"></i>
-                            <h2 class=" text-2xl">23</h2>
+                            <h2 id="task-finish" class=" text-2xl">23</h2>
                         </div>
                         <div class="bg-slate-100 h-12 w-12 rounded-[50%] flex justify-center items-center"><img
                                 src="./assets/theme-btn.png" alt=""></div>
@@ -71,7 +71,7 @@
                             </div>
                             <div class="flex flex-col items-center justify-center text-xs">
                                 <h2>Task Assigned</h2>
-                                <h1 class="font-bold text-2xl">05</h1>
+                                <h1 id="task-assign" class="font-bold text-2xl">5</h1>
                             </div>
                         </div>
                         <div
@@ -80,15 +80,13 @@
                             <p class="text-xs md:text-sm text-white">Discover Something New Today!</p>
                         </div>
                         <div
-                            class="w-full md:w-1/5 bg-slate-100 rounded-lg flex flex-row gap-2 items-center justify-center p-4">
+                            class="w-full md:w-1/5 bg-slate-100 rounded-lg flex flex-row gap-2 items-center justify-center p-2">
                             <div class="bg-white w-12 h-12 rounded-[50%] flex justify-center items-center">
                                 <img src="./assets/calender.png" alt="">
                             </div>
                             <div class="flex flex-col items-center justify-center text-xs">
-                                <h2 class="text-lg">Wed,</h2>
-                                <h1 class="font-bold text-sm">
-                                    Jul 28 2025
-                                </h1>
+                                <h2 id="weekday" class="text-xl"></h2>
+                                <p class="font-bold text-sm" id="show-date"></p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +104,7 @@
                                     <p class="text-sm"> 21 March 2025</p>
                                 </div>
                                 <div>
-                                    <button class="btn bg-blue-600 text-white">Completed</button>
+                                    <button id="shop-ease" class="btn bg-blue-600 text-white">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -199,6 +197,8 @@
 
     </main>
     <footer> </footer>
+    <script src="./scripts/utilities.js"></script>"
+    <script src="./scripts/task.js"></script>
 </body>
 
 </html>
