@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="bg-slate-100  lg:h-screen">
+<body class="bg-slate-200  h-min-screen">
     <header class="pt-4">
         <nav class="bg-white mx-32  rounded-lg h-20">
             <ul class="flex justify-between items-center">
@@ -23,13 +23,72 @@
                 </li>
                 <!-- task complete and bg-button section -->
                 <button id="back-btn" class="btn mr-8 bg-blue-600 text-white">
-                    <i class="fa-solid fa-arrow-left"></i>Back to page</button>
+                    <i class="fa-solid fa-arrow-left"></i>Back to Desk</button>
 
 
         </nav>
 
     </header>
     <main>
+        <!-- section  for blog -->
+        <section class="mx-32 my-16 pb-16">
+            <div>
+                <h1 class="font-bold text-2xl my-8 text-center">Blogs</h1>
+                <div class="bg-white rounded-lg p-4 mt-4 mb-1">
+                    <p>Question-1: What are the different ways to select an element in the DOM?</p>
+                </div>
+                <div class="bg-white text-slate-500 rounded-lg p-4 mb-4 mt-1">
+                    Ans: There are multiple ways to select an element in the DOM. Some of the most common ways are:
+                    <ul>
+                        <li>getElementById</li>
+                        <li>getElementsByClassName</li>
+                        <li>getElementsByTagName</li>
+                        <li>querySelector</li>
+                        <li>querySelectorAll</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg p-4 mt-4 mb-1">
+                    <p>Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+                </div>
+                <div class="bg-white text-slate-500 rounded-lg p-4 mb-4 mt-1">
+                    <p>
+                        Ans: innerHTML: It returns the HTML content of an element. It can also be used to set the HTML
+                        content of an element.
+                        innerText: It returns the text content of an element. It does not return the text content of
+                        hidden elements.
+                        textContent: It returns the text content of an element. It returns the text content of hidden
+                        elements as well.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-4 mt-4 mb-1">
+                    <p>Question-3: What is event delegation in the DOM?</p>
+                </div>
+                <div class="bg-white text-slate-500 rounded-lg p-4 mb-4 mt-1">
+                    <p>
+                        Ans: Event delegation is a technique in which we attach a single event listener to a parent
+                        element that will fire for all children matching a selector, whether they are present now or in
+                        the future.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-4 mt-4 mb-1">
+                    <p> Question-4: What is event bubbling in the DOM?</p>
+                </div>
+                <div class="bg-white text-slate-500 rounded-lg p-4 mb-4 mt-1">
+                    <p>
+                        Ans: Event bubbling is a mechanism in which an event propagates through the DOM hierarchy. When
+                        an event is fired on an element, it first runs the event handlers on it, then on its parent, then  all the way up on other ancestors.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg p-4 mt-4 mb-1">
+                    <p>Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                </div>
+                <div class="bg-white text-slate-500 rounded-lg p-4 mb-4 mt-1">
+                    <p>
+                        Ans: To create an element, we use the createElement method. To add an element, we use the appendChild method. To remove an element, we use the removeChild method.
+                    </p>
+                </div>
+            </div>
+        </section>
         
     </main>
 
