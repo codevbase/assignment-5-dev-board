@@ -13,7 +13,11 @@
 
 //     document.getElementById("shop-ease").disabled = true;
 //     document.getElementById("shop-ease").style.backgroundColor = "gray-100";
+
 // });
+
+
+
 const buttons  = document.getElementsByClassName("ok-btn");
 const issues = document.getElementsByClassName("issue");
 
@@ -91,9 +95,21 @@ function updateDate() {
     document.getElementById("weekday").innerText = weekDay;
     document.getElementById("show-date").innerText = today;
 }
+
 updateDate();
 
 document.getElementById("theme-btn").addEventListener("click", function() {
     document.body.style.backgroundColor = getBgColor();
 
 });
+
+
+
+
+document.getElementById("discover-area").addEventListener("click", function() {
+    window.location.href = "blog.html";
+});
+
+
+
+
