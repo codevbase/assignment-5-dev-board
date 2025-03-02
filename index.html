@@ -28,8 +28,8 @@
                             <i class="fa-solid fa-square-check text-xl text-blue-700"></i>
                             <h2 id="task-finish" class=" text-2xl">23</h2>
                         </div>
-                        <div class="bg-slate-100 h-12 w-12 rounded-[50%] flex justify-center items-center"><img
-                                src="./assets/theme-btn.png" alt=""></div>
+                        <div class="bg-slate-100 h-12 w-12 rounded-[50%] flex justify-center items-center cursor-pointer"><img
+                                src="./assets/theme-btn.png" alt="" id="theme-btn"></div>
                     </div>
                 </li>
 
@@ -49,12 +49,12 @@
 
                         </div>
 
-                        <button class="btn bg-blue-600 text-white md:w-32 text-xs sm:text-sm self-center"> Clear
+                        <button id="clear-history" class="btn bg-blue-600 text-white md:w-32 text-xs sm:text-sm self-center"> Clear
                             History</button>
                     </div>
 
                     <!-- History display section -->
-                    <div>
+                    <div id="history" class="flex flex-col gap-2 p-1">
 
                     </div>
 
@@ -94,7 +94,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 grid-wrap">
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">ShopEase</h3>
-                            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+                            <h2 class="text-xl font-bold issue">Fix Mobile Button Issue</h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-fit bg-white rounded-md">Debug using Chrome
                                 <br> DevTools, check for overlappin.
                             </p>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">CloudSync</h3>
-                            <h2 class="text-xl font-bold">Add Dark Mode</h2>
+                            <h2 class="text-xl font-bold issue">Add Dark Mode</h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-16 bg-white rounded-md">Store the user's
                                 preference in localStorage, update CSS variables dynamically, and apply a smooth
                                 transition effect.</p>
@@ -127,7 +127,7 @@
                         </div>
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">SwiftPay</h3>
-                            <h2 class="text-xl font-bold">Optimize Home page </h2>
+                            <h2 class="text-xl font-bold issue">Optimize Home page </h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-16 bg-white rounded-md">Debug using Chrome
                                 <br> DevTools, check for overlappin.
                             </p>
@@ -143,7 +143,7 @@
                         </div>
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">Meta</h3>
-                            <h2 class="text-xl font-bold">Add new emoji</h2>
+                            <h2 class="text-xl font-bold issue">Add new emoji</h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-fit bg-white rounded-md">Debug using Chrome
                                 <br> DevTools, check for overlappin.
                             </p>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">Google LLC</h3>
-                            <h2 class="text-xl font-bold">Integrate openAI API</h2>
+                            <h2 class="text-xl font-bold issue">Integrate openAI API</h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-fit bg-white rounded-md">Debug using Chrome
                                 <br> DevTools, check for overlappin.
                             </p>
@@ -175,7 +175,7 @@
                         </div>
                         <div class="bg-slate-100 w-full h-fit rounded-lg p-4 flex flex-col gap-2">
                             <h3 class="bg-white w-fit p-2">Glassdoar</h3>
-                            <h2 class="text-xl font-bold">Improve Job searching</h2>
+                            <h2 class="text-xl font-bold issue">Improve Job searching</h2>
                             <p class="overflow-hidden p-2 text-gray-600 h-fit bg-white rounded-md">Debug using Chrome
                                 <br> DevTools, check for overlappin.
                             </p>
@@ -197,7 +197,7 @@
 
     </main>
     <footer> </footer>
-    <script src="./scripts/utilities.js"></script>"
+    <script src="./scripts/bgcolor.js"></script>"
     <script src="./scripts/task.js"></script>
 </body>
 

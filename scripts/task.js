@@ -15,8 +15,15 @@
 //     document.getElementById("shop-ease").style.backgroundColor = "gray-100";
 // });
 const buttons  = document.getElementsByClassName("ok-btn");
+const issues = document.getElementsByClassName("issue");
+
+
+
+let i = 0;
 for(const button of buttons) {
+    const index = i;
     button.addEventListener("click", function() {
+        alert("board updated successfully");
         const taskElement = document.getElementById("task-assign").innerText;
         const taskFinishElement = document.getElementById("task-finish").innerText;
         
@@ -28,17 +35,49 @@ for(const button of buttons) {
         taskFinish = taskFinish + 1;
         document.getElementById("task-finish").innerText = taskFinish;
 
+
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+
+
+        
+        
+
+        const historyElement = document.getElementById("history");
+        // const newElement = document.createElement("li");
+        // newElement.innerText = "Task completed successfully";
+        // historyElement.appendChild(newElement);
+        historyElement.innerHTML += 
+        `
+        <p class="bg-slate-100 p-1 text-xs rounded-md">you have compeleted the task ${issues[index].innerText}
+        at ${time}</p>
+        `;
+
     
        
         button.disabled = true;
         button.style.backgroundColor = "gray-100";
 
+        
+
+        
+
         if(task === 0) {
-            alert("All tasks are done!");
+            alert("Congrates!!! You have completed all the current tasks.");
         }
 
+        
+
     });
+    i++;
+    
 }
+
+
+document.getElementById("clear-history").addEventListener("click", function() {
+    const historyElement = document.getElementById("history");
+    historyElement.innerHTML = "";
+});
 
 
 function updateDate() {
@@ -53,3 +92,8 @@ function updateDate() {
     document.getElementById("show-date").innerText = today;
 }
 updateDate();
+
+document.getElementById("theme-btn").addEventListener("click", function() {
+    document.body.style.backgroundColor = getBgColor();
+
+});
